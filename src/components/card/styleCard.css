@@ -1,0 +1,60 @@
+.pelicula {
+  min-width: 20%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  position: relative;
+}
+
+.pelicula img {
+  width: 100%;
+  height: 55%;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.pelicula img:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+.controles button {
+  color: #aaa;
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 5px;
+  margin: 25px;
+  cursor: pointer;
+}
+.controles button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.pelicula p {
+  padding-top: 10px;
+  color: #fff;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.info-peli {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-right: 10px;
+}
+.info-peli p {
+  color: #aaa;
+}
+.info {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  padding: 10px;
+  /*   margin-bottom: 5px; */
+}

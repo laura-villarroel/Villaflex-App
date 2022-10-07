@@ -1,0 +1,148 @@
+.contenedor-detalle {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  /*  background: rgba(62, 61, 61, 0.3); */
+  background: rgba(196, 25, 33, 0.05);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+.info-detalle {
+  margin: 10px;
+}
+
+.titulo-detalle {
+  font-weight: 600;
+  font-size: 1em;
+  color: #fff;
+}
+.titulo-detalle span {
+  color: #aaa;
+}
+.contenedor-detalle img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  /* width: 80%; */
+}
+.genero-detalle {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.genero-detalle p {
+  margin-right: 20px;
+  color: #aaa;
+}
+.rating {
+  margin-top: 20px;
+}
+
+.rating h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #fff;
+}
+.rating progress {
+  background: red;
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+.resumen h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.resumen p {
+  color: #aaa;
+}
+
+.cast {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+.cast h3 {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.type {
+  margin-top: 20px;
+}
+.type h3 {
+  color: #fff;
+  font-size: 1em;
+}
+
+.type span {
+  color: #aaa;
+}
+
+@media screen and (min-width: 576px) {
+  .contenedor-detalle {
+    flex-direction: row;
+
+    /*  padding: 50px; */
+  }
+  .contenedor-detalle img {
+    min-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .contenedor-detalle {
+    flex-direction: row;
+
+    padding: 10px;
+  }
+
+  .info-detalle {
+    margin-left: 40px;
+  }
+
+  .titulo-detalle {
+    font-size: 1.8em;
+  }
+
+  .contenedor-detalle img {
+    min-width: 30%;
+  }
+
+  .genero-detalle {
+    flex-direction: row;
+  }
+  .rating {
+  }
+
+  .rating h3 {
+    font-size: 2em;
+  }
+  .rating progress {
+    width: 20%;
+  }
+
+  .resumen h2 {
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+  .resumen p {
+  }
+
+  .cast {
+  }
+
+  .cast h3 {
+    font-size: 1.4em;
+  }
+
+  .type h3 {
+    font-size: 1.2em;
+  }
+}

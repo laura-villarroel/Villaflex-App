@@ -1,0 +1,52 @@
+.enlace {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.enlace-logo {
+  text-decoration: none;
+}
+.enlace:hover {
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.buscar {
+}
+
+.buscar-texto {
+  border: none;
+  height: 30px;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  float: left;
+  line-height: 60px;
+  transition: 0.3s;
+  width: 0;
+}
+
+.boton {
+  color: #aaa;
+  background: none;
+  border: none;
+  width: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  color: #fff;
+}
+
+.buscar:hover > .buscar-texto {
+  width: 200px;
+  border: 2px solid #aaa;
+}
