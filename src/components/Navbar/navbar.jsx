@@ -18,7 +18,7 @@ export default function Navbar() {
     e.preventDefault();
 
     if (name) {
-      window.location.href = `http://localhost:3000/movies/${name}`;
+      window.location.href = `https://villaflex-app-movie.vercel.app/movies/${name}`;
     }
 
     /*   setTimeout(function () {
