@@ -12,7 +12,7 @@ const apikey = '1bc6c554'; // otra 20dac387
 export const getMovies = titulo => {
   return async function (dispatch) {
     return axios
-      .get(`http://www.omdbapi.com/?apikey=${apikey}&s=${titulo}`)
+      .get(`https://www.omdbapi.com/?apikey=${apikey}&s=${titulo}`)
       .then(json => {
         dispatch({ type: GET_MOVIES, payload: json.data }); // json.Search
       })
@@ -23,7 +23,7 @@ export const getMovies = titulo => {
 export const getMovieDetail = idMovie => {
   return async function (dispatch) {
     return axios
-      .get(`http://www.omdbapi.com/?apikey=${apikey}&i=${idMovie}`)
+      .get(`https://www.omdbapi.com/?apikey=${apikey}&i=${idMovie}`)
       .then(json => {
         dispatch({ type: GET_MOVIE_DETAIL, payload: json.data }); // json.Search
       })
