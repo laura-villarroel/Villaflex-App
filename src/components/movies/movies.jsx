@@ -7,6 +7,7 @@ import { getMovies, cleanDetail } from '../../redux/actions/actionsCreators';
 import './styleMovies.css';
 // paso 4 importar link
 /* import { getCard } from '../../redux/actions/actionsCreators'; */
+import img1 from '../../image/gif-loading.gif';
 
 export default function Movies() {
   const dispatch = useDispatch();
@@ -20,19 +21,27 @@ export default function Movies() {
     };
   }, []);
   return (
-    <div className="contenedor-movies contenedor">
-      <div className="contenedor-peliculas-search">
-        {Movies.map(c => (
-          <Card
-            key={c.imdbID}
-            id={c.imdbID}
-            name={c.Title}
-            year={c.Year}
-            img={c.Poster}
-            type={c.Type}
-          />
-        ))}
-      </div>
+    <div>
+      {Movies[0].Title ? (
+        <div className="contenedor-movies contenedor">
+          <div className="contenedor-peliculas-search">
+            {Movies.map(c => (
+              <Card
+                key={c.imdbID}
+                id={c.imdbID}
+                name={c.Title}
+                year={c.Year}
+                img={c.Poster}
+                type={c.Type}
+              />
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="contenedor-detalle contenedor">
+          <img src={img1} alt="" />
+        </div>
+      )}
     </div>
   );
 }
